@@ -3,7 +3,7 @@ import cv2
 img = cv2.imread('lenna.png')
 h, w = img.shape[0:2]
 img_Gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-img_Gaussian = img_Gray
+img_Gaussian = img_Gray.copy()
 means = 2
 sigma = 4
 #给每个像素点加高斯噪声
@@ -21,7 +21,7 @@ percentage = 0.8
 import numpy as np
 img = cv2.imread('lenna.png')
 img_Gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-img_Gaussian = img_Gray
+img_Gaussian = img_Gray.copy()
 for i in range(int(percentage*h*w)):
     randx = random.randint(1, h-1)
     randy = random.randint(1, w-1)
