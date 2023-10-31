@@ -28,10 +28,10 @@ salt_vs_pepper：可选的，float型，椒盐噪声中椒盐比例，值越大�
 '''
 
 img = cv.imread("lenna.png")
-noise_gs_img=util.random_noise(img,mode='poisson')
+noise_ps_img=util.random_noise(img,mode='poisson')
 
 cv.imshow("source", img)
-cv.imshow("lenna",noise_gs_img)
+cv.imshow("lenna",noise_ps_img)
 #cv.imwrite('lenna_noise.png',noise_gs_img)
 cv.waitKey(0)
 cv.destroyAllWindows()
