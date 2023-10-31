@@ -28,10 +28,25 @@ salt_vs_pepper：可选的，float型，椒盐噪声中椒盐比例，值越大�
 '''
 
 img = cv.imread("lenna.png")
-noise_ps_img=util.random_noise(img,mode='poisson')
+h, w, c = img.shape
+_range = np.max(img) - np.min(img)
+img_N = np.zeros([h, w, c])
+from tqdm import tqdm, trange
+#img的像素值范围是0-255，而加噪后的图片像素值范围是0-1
+#cv2.imshow()需要在同一类型且值范围一样的情况下显示
+#因此这里需要先把img的像素值归一化
+for cc in range(c):
+    for i in trange(h):
+        for j in range(w):
+            img_N[i][j][cc] = float((int(img[i][j][cc]) - int(np.min(img)))/_range)
+print(img_N)
+img_2 = cv.imread("lenna.png")
+noise_ps_img=util.random_noise(img_2,mode='poisson')
+# noise_sp_img = util.random_noise(img, mode='s&p')
 
-cv.imshow("source", img)
-cv.imshow("lenna",noise_ps_img)
+cv.imshow('lenna', np.hstack([img_N, noise_ps_img]))
+# cv.imshow("source", img)
+# cv.imshow("lenna", noise_ps_img)
 #cv.imwrite('lenna_noise.png',noise_gs_img)
-cv.waitKey(0)
+cv.waitKey()
 cv.destroyAllWindows()
