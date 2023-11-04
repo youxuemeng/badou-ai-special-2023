@@ -7,7 +7,7 @@ import numpy as np
 import random
 
 def GaussianNoise(src,means,sigma,percentage):
-    NoiseImg = src
+    NoiseImg = src.copy()
     NoiseNum = int(percentage*src.shape[0]*src.shape[1])
 
     for i in range(NoiseNum):
