@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-
+#利用邻近插值法生成缩放图片，输入图片高度和宽度
 def function(img,h,w):
     height,width,channels=img.shape
     emptyImage = np.zeros((h,w,channels),np.uint8)#新建一个800*800的图片
