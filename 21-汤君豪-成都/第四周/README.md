@@ -1,6 +1,5 @@
-#Assignment for Week 4
-
-
+Assignment for Week 4
+=
 np.mean(data, axis=0)用法
 -
 import numpy as np
