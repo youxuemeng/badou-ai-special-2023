@@ -17,6 +17,6 @@ print np.mean(X, axis=1, keepdims=True)
 **axis=1，输出矩阵是1列，求每一行的平均（按照每一列去求平均），**  
 **还可以这么理解，axis是几，那就表明哪一维度被压缩成1。**  
 
-## 非极大值抑制
+## 非极大值抑制（Non-Maximum Suppression，NMS）
 **消除冗余**  
 **其思想是搜素局部最大值，抑制非极大值。**  
