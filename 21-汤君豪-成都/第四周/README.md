@@ -7,3 +7,8 @@ print np.mean(X, axis=0, keepdims=True)
 print np.mean(X, axis=1, keepdims=True)
 '''
 
+```javascript
+$(document).ready(function () {
+    alert('RUNOOB');
+});
+```
