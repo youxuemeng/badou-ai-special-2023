@@ -9,7 +9,7 @@ $$Var(a)=\frac1m\sum_{i=1}^m{(a_i-\mu)^2}$$
 ### 协方差矩阵
 
 假设只有a和b两个字段，那么我们将它们按行组成矩阵X:
-\[X=\begin{pmatrix}a_1&a_2&\cdots&a_m\\b_1&b_2&\cdots&b_m\end{pmatrix}\]
+\begin{equation}X=\begin{pmatrix}a_1&a_2&\cdots&a_m\\b_1&b_2&\cdots&b_m\end{pmatrix}\end{equation}
 然后用X乘以X的转置，并乘上系数1/m:
 $$\left.\frac1mXX^{\mathsf{T}}=\left(\begin{array
 {ll}\frac1m\sum_{i=1}^ma_i^2&\frac1m\sum_{i=1}^ma_ib_i\\\frac1m\sum_{i=1}^ma_ib_i
