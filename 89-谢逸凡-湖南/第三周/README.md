@@ -13,5 +13,6 @@
 白噪声对比:
 ![image](https://github.com/TK-R99/89----/blob/main/89-%E8%B0%A2%E9%80%B8%E5%87%A1-%E6%B9%96%E5%8D%97/%E7%AC%AC%E4%B8%89%E5%91%A8/white_nosie.png)
 
+
 高斯噪声对比：
-![image](https://github.com/TK-R99/89----/blob/main/89-%E8%B0%A2%E9%80%B8%E5%87%A1-%E6%B9%96%E5%8D%97/%E7%AC%AC%E4%B8%89%E5%91%A8/gaussian_noise.png)
+![image](https://github.com/TK-R99/89----/blob/main/89-%E8%B0%A2%E9%80%B8%E5%87%A1-%E6%B9%96%E5%8D%97/%E7%AC%AC%E4%B8%89%E5%91%A8/gauss_noise.png)
