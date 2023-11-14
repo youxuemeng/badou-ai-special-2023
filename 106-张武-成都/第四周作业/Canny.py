@@ -30,12 +30,8 @@ kernel_size = 3
 
 
 def CannyThreshold(low_threshold):
-    # # 高斯滤波
-    detected_edges = cv.GaussianBlur(gray, (3, 3), 1)
-    # # sobel矩阵
-    edges = cv.Canny(detected_edges, low_threshold, low_threshold * ratio, kernel_size)
-    print(edges)
-
+    # Canny边缘检测
+    edges = cv.Canny(gray, low_threshold, low_threshold * ratio, kernel_size)
     cv.imshow("Canny demo", edges)
 
 
