@@ -9,7 +9,7 @@ numpy.insert可以有三个参数（arr，obj，values），也可以有4个参�
 语法：GaussianBlur（src，ksize，sigmaX [，dst [，sigmaY [，borderType]]]）-> dst  
 **例：**
 ```python
-dst=cv2.GaussianBlur(src, (5, 5), 0)
+dst = cv2.GaussianBlur(src, (5, 5), 0)
 ```
 ——src输入图像；图像可以具有任意数量的通道，这些通道可以独立处理，但深度应为CV_8U，CV_16U，CV_16S，CV_32F或CV_64F。  
 ——dst输出图像的大小和类型与src相同。  
