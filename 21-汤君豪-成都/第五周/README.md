@@ -95,5 +95,13 @@ method - 为轮廓的近似办法
 * cv2.CHAIN_APPROX_SIMPLE：压缩水平方向，垂直方向，对角线方向的元素，只保留该方向的终点坐标，例如一个矩形轮廓只需4个点来保存轮廓信息
 * cv2.CHAIN_APPROX_TC89_L1，CV_CHAIN_APPROX_TC89_KCOS 使用teh-Chinl chain 近似算法
 
+## cv2.drawContours()用法
+语法：cv2.drawContours(image, contours, contourIdx, color, thickness=None, lineType=None, hierarchy=None, maxLevel=None, offset=None)
+
+image - 是指明在哪幅图像上绘制轮廓；image为三通道才能显示轮廓  
+contours - 是轮廓本身，在Python中是一个list  
+contourIdx - 指定绘制轮廓list中的哪条轮廓，如果是-1，则绘制其中的所有轮廓  
+color - 指定绘制的颜色，例如(0, 0, 255)表示红色【CV2里面的三通道为BGR】
+thickness - 表明轮廓线的宽度，如果是-1（cv2.FILLED），则为填充模式。
 ## 透视变换
 <img width="1081" alt="image" src="https://github.com/tangjunhao518/badou-ai-special-2023/assets/93815985/21bef868-ef21-41ab-84c6-ece7bb4359a8">
