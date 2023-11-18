@@ -80,7 +80,9 @@ print('\n', kernel3)
 语法：cv2.Canny(image, threshold1, threshold2[, edges[, apertureSize[, L2gradient ]]]) 
 
 ## cv2.findContours()用法
-cv2.findContours(image, mode, method[, contours[, hierarchy[, offset ]]])  
+详解：<https://www.cnblogs.com/wojianxin/p/12602490.html>
+
+contours, hierarchy = cv2.findContours(image, mode, method[, contours[, hierarchy[, offset ]]])  
 image - 第一个参数是寻找轮廓的图像  
 mode - 表示轮廓的检索模式，有四种（这里说的都是cv2接口，因为cv2接口与cv3接口不同）
 * cv2.RETR_EXTERNAL：表示只检测外轮廓
