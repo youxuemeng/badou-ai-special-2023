@@ -31,8 +31,8 @@ img_dilate = cv2.dilate(img, kernel, iterations = 1)
 ```
 ## cv2.getStructuringElement()用法
 语法：cv2.getStructuringElement(shape， ksize)  
-shape - 代表形状类型  
 
+shape - 代表形状类型  
 * cv2. MORPH_RECT：矩形结构元素，所有元素值都是1
 * cv2. MORPH_CROSS：十字形结构元素，对角线元素值都是1
 * cv2. MORPH_ELLIPSE：椭圆形结构元素  
