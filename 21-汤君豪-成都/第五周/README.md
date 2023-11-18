@@ -69,5 +69,17 @@ print('\n', kernel3)
 #  [1 1 1 1 1]
 #  [0 0 1 0 0]]
 ```
+## cv2.Canny()用法
+1. 使用高斯模糊，去除噪音点（cv2.GaussianBlur）
+2. 灰度转换（cv2.cvtColor）
+3. 使用sobel算子，计算出每个点的梯度大小和梯度方向
+4. 使用非极大值抑制(只有最大的保留)，消除边缘检测带来的杂散效应
+5. 应用双阈值，来确定真实和潜在的边缘
+6. 通过抑制弱边缘来完成最终的边缘检测
+
+语法：cv2.Canny(image, threshold1, threshold2[, edges[, apertureSize[, L2gradient ]]]) 
+
+## cv2.findContours()用法
+cv2.findContours(image, mode, method[, contours[, hierarchy[, offset ]]])  
 ## 透视变换
 <img width="1081" alt="image" src="https://github.com/tangjunhao518/badou-ai-special-2023/assets/93815985/21bef868-ef21-41ab-84c6-ece7bb4359a8">
