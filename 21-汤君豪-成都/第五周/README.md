@@ -34,7 +34,7 @@ img_dilate = cv2.dilate(img, kernel, iterations = 1)
 shape - 代表形状类型  
 * cv2. MORPH_RECT：矩形结构元素，所有元素值都是1
 * cv2. MORPH_CROSS：十字形结构元素，对角线元素值都是1
-* cv2. MORPH_ELLIPSE：椭圆形结构元素
+* cv2. MORPH_ELLIPSE：椭圆形结构元素  
 ksize - 代表形状元素的大小  
 ```python
 import cv2
