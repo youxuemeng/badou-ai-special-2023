@@ -31,9 +31,41 @@ img_dilate = cv2.dilate(img, kernel, iterations = 1)
 ```
 ## cv2.getStructuringElement()用法
 语法：cv2.getStructuringElement(shape， ksize)  
-shape - 代表形状类型
+shape - 代表形状类型  
 * cv2. MORPH_RECT：矩形结构元素，所有元素值都是1
 * cv2. MORPH_CROSS：十字形结构元素，对角线元素值都是1
 * cv2. MORPH_ELLIPSE：椭圆形结构元素
+ksize - 代表形状元素的大小  
+```python
+import cv2
+import numpy as np
+
+kernel1 = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 5))
+kernel2 = cv2.getStructuringElement(cv2.MORPH_CROSS, (5, 5))
+kernel3 = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
+
+print(kernel1)
+print('\n', kernel2)
+print('\n', kernel3)
+
+# 输出为：
+# [[1 1 1 1 1]
+#  [1 1 1 1 1]
+#  [1 1 1 1 1]
+#  [1 1 1 1 1]
+#  [1 1 1 1 1]]
+# 
+#  [[0 0 1 0 0]
+#  [0 0 1 0 0]
+#  [1 1 1 1 1]
+#  [0 0 1 0 0]
+#  [0 0 1 0 0]]
+# 
+#  [[0 0 1 0 0]
+#  [1 1 1 1 1]
+#  [1 1 1 1 1]
+#  [1 1 1 1 1]
+#  [0 0 1 0 0]]
+```
 ## 透视变换
 <img width="1081" alt="image" src="https://github.com/tangjunhao518/badou-ai-special-2023/assets/93815985/21bef868-ef21-41ab-84c6-ece7bb4359a8">
