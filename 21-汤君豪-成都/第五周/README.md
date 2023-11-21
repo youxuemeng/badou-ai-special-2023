@@ -103,3 +103,22 @@ contours - 是轮廓本身，在Python中是一个list
 contourIdx - 指定绘制轮廓list中的哪条轮廓，如果是-1，则绘制其中的所有轮廓  
 color - 指定绘制的颜色，例如(0, 0, 255)表示红色【CV2里面的三通道为BGR】
 thickness - 表明轮廓线的宽度，如果是-1（cv2.FILLED），则为填充模式。  
+
+## cv2.imread()用法
+imread()读取图片文件，imread函数有两个参数，第一个参数是图片路径，第二个参数表示读取图片的形式，有三种：
+* cv2.IMREAD_COLOR：加载彩色图片，这个是默认参数，可以直接写1。
+* cv2.IMREAD_GRAYSCALE：以灰度模式加载图片，可以直接写0。
+* cv2.IMREAD_UNCHANGED：包括alpha，可以直接写-1
+
+cv2.imread()读取图片后以多维数组的形式保存图片信息，前两维表示图片的像素坐标，最后一维表示图片的通道索引。（注意cv2读取的图片通道保存顺序为BGR，而不是RGB）
+
+
+
+
+
+
+
+
+
+
+
