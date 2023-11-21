@@ -111,8 +111,10 @@ imread()读取图片文件，imread函数有两个参数，第一个参数是图
 * cv2.IMREAD_UNCHANGED：包括alpha，可以直接写-1
 
 cv2.imread()读取图片后以多维数组的形式保存图片信息，前两维表示图片的像素坐标，最后一维表示图片的通道索引。（注意cv2读取的图片通道保存顺序为BGR，而不是RGB）
-
-
+**相应代码**
+```python
+img = cv2.imread("lenna.png", 0)
+```
 
 
 
