@@ -34,3 +34,10 @@
   - 实现photo 图像的纸片识别，其中 主要是应用公式， 自己求解了透视变换 中的 变换矩阵。
 + 定点.py
   - 记录老师的找图片点的代码
+## 06文件夹
++ hash_detail_own.py
+  - 自己实现差值hash，和均值hash，感知hash参考的老师的
++ sift_keypoint.py
+  - 调用接口实现sift 检测，同时拼接两个图片，未拼接成功-_--
++ ransac.py
+  - 参考的老师的ransac 模型
