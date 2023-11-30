@@ -33,9 +33,7 @@ z=z_score(l)
 print(n1)
 print(n2)
 print(z)
-'''
-蓝线为原始数据，橙线为z
-'''
+
 # plt.plot(l,cs)
 plt.plot(n1,cs)
 plt.plot(n2,cs)
