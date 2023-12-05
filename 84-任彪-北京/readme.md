@@ -1,7 +1,8 @@
 # 作业提示：
 
 ## 02文件夹
-+ rgb2gray_gray2binary.py   
++ rgb2gray_gray2binary.py
++ 
   - 使用灰色通道和二值通道生成新图片  
 + normal_interpolation.py  
   - rgb图像 使用临近插值法生成新图片 
@@ -41,3 +42,12 @@
   - 调用接口实现sift 检测，同时拼接两个图片，未拼接成功-_--
 + ransac.py
   - 参考的老师的ransac 模型
+## 07文件夹
++ [min_max_detail.py](07%2Fmin_max_detail.py)
+  - min_max 归一化
++ [z_score_detail.py](07%2Fz_score_detail.py)
+  - z-score 归一化
++ [sigmoid.py](07%2Fsigmoid.py)
+  - sigmoid 归一化
++ [three_method.py](07%2Fthree_method.py)
+  - 调用sklearn 库的归一化
