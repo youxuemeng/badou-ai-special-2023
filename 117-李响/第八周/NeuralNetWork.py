@@ -81,7 +81,7 @@ n = NeuralNetWork(input_nodes, hidden_nodes, output_nodes, learning_rate)
 
 #读入训练数据
 #open函数里的路径根据数据存储的路径来设定
-training_data_file = open("dataset/mnist_train.csv",'r')
+training_data_file = open("../NeuralNetWork_从零开始/dataset/mnist_train.csv", 'r')
 training_data_list = training_data_file.readlines()
 training_data_file.close()
 
@@ -97,7 +97,7 @@ for e in range(epochs):
         targets[int(all_values[0])] = 0.99
         n.train(inputs, targets)
 
-test_data_file = open("dataset/mnist_test.csv")
+test_data_file = open("../NeuralNetWork_从零开始/dataset/mnist_test.csv")
 test_data_list = test_data_file.readlines()
 test_data_file.close()
 scores = []
