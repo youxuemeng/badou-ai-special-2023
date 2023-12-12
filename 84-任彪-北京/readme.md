@@ -51,3 +51,8 @@
   - sigmoid 归一化
 + [three_method.py](07%2Fthree_method.py)
   - 调用sklearn 库的归一化
+## 08文件夹
++ [keras_detal.py](08%2Fkeras_detal.py)
+  - keras 实现深度神经网络
++ [neural_network_own_detail.py](08%2Fneural_network_own_detail.py)
+  - 手动实现深度神经网络
