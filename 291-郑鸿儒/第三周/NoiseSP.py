@@ -16,7 +16,7 @@ def noise_sp(src, percentage=1):
     return NoiseImg
 
 
-img = cv2.imread("lenna.png", 0)
+img = cv2.imread("img/lenna.png", 0)
 cv2.imshow("source", img)
 noise_img = noise_sp(img, 1)
 cv2.imshow("SPNoise", noise_img)

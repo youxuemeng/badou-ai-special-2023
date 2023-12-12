@@ -18,9 +18,9 @@ def noise_gauss(src, sigma, mean, percentage=1):
     return NoiseImg
 
 
-img = cv2.imread('lenna.png', 0)
+img = cv2.imread('img/lenna.png', 0)
 noise_img = noise_gauss(img, 2, 4, 0.8)
-img = cv2.imread('lenna.png', 1)
+img = cv2.imread('img/lenna.png', 1)
 img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 cv2.imshow('source', img_gray)
 cv2.imshow('Gaussian lenna', noise_img)

@@ -10,9 +10,9 @@ import numpy as np
 #         1 8 bit 3 channels
 #         2 origin 1 channel
 #         3 origin 3 channel
-img = cv2.imread('lenna.png')
+img = cv2.imread('img/lenna.png')
 # 直接读取灰度图也可以
-img_gray = cv2.imread('lenna.png', 0)
+img_gray = cv2.imread('img/lenna.png', 0)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 dst = cv2.equalizeHist(gray)
